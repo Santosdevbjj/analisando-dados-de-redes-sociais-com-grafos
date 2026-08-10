@@ -1,6 +1,0 @@
-gghh
----
-hhhj
-
----
-nbb
