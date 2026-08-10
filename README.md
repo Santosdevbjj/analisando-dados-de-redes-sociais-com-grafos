@@ -1,6 +1,6 @@
 # Analisando Dados de Redes Sociais com Grafos
 
-Projeto de portfólio em Neo4j para analisar redes sociais com foco em demografia, alcance de plataformas e comportamento digital da Gen Z.
+Projeto em Neo4j para analisar redes sociais com foco em demografia, alcance de plataformas e comportamento digital da Gen Z.
 
 ## 1. Problema de negócio
 
