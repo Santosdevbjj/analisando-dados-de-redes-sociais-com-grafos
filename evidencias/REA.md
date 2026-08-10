@@ -1,5 +1,0 @@
-oktgg
-yhhh
----
-jjj
---
