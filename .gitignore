@@ -1,9 +1,52 @@
+# ==========================================
+# Python & Ambientes Virtuais
+# ==========================================
 __pycache__/
-*.pyc
-.ipynb_checkpoints/
-.DS_Store
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+
+# ==========================================
+# Configurações de Segurança e Credenciais
+# ==========================================
 .env
+*.env
+!.env.example
+!config/database.env.example
+
+# ==========================================
+# Dados e Amostras Locais
+# ==========================================
 data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+
+# Exceção para garantir o versionamento da pasta samples
+!data/samples/
+!data/samples/*
+
+# ==========================================
+# Testes, Cobertura e Caches
+# ==========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# ==========================================
+# Arquivos de Sistema e IDEs
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ==========================================
+# Logs e Temp Files
+# ==========================================
+*.log
+*.tmp
