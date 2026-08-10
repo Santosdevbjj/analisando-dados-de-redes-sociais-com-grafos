@@ -1,0 +1,11 @@
+# Configuração do seletor de Issues do GitHub
+blank_issues_enabled: false
+
+contact_links:
+  - name: 💬 Dúvidas e Discussões gerais
+    url: https://github.com/Santosdevbjj/analisando-dados-de-redes-sociais-com-grafos/discussions
+    about: Utilize as Discussões para tirar dúvidas sobre as queries Cypher, modelo de grafos ou arquitetura.
+
+  - name: 📖 Documentação do Projeto
+    url: https://github.com/Santosdevbjj/analisando-dados-de-redes-sociais-com-grafos#readme
+    about: Consulte a documentação principal para guias de reprodução e suporte técnico.
