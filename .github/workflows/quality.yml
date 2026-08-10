@@ -1,0 +1,37 @@
+name: Data Quality & Code Integrity
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Código
+      uses: actions/checkout@v4
+
+    - name: Configurar Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: Instalar Dependências
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install pytest flake8
+
+    - name: Verificar Lint (Sintaxe e Qualidade do Código)
+      run: |
+        # Para a execução se houver erros de sintaxe Python
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # Avisos tratados de forma informativa
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+    - name: Executar Testes de Qualidade de Dados (PyTest)
+      run: |
+        pytest tests/
