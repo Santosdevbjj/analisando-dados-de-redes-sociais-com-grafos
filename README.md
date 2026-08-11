@@ -226,6 +226,8 @@ Versão agregada com 500 perfis consolidados por combinações demográficas e c
 
 ## Modelagem de Grafo
 
+```
+
  (:Country) <---[:LIVES_IN]--- (:GenZProfile) ---[:USES {is_primary: true}]---> (:Platform)
                                       |                                              |
                                       +--------[:BELONGS_TO]--------> (:AgeGroup) <--+
@@ -234,6 +236,7 @@ Versão agregada com 500 perfis consolidados por combinações demográficas e c
                                                                      [:HAS_AUDIENCE]
 
 
+```
 
 
 ---
