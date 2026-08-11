@@ -241,13 +241,31 @@ Versão agregada com 500 perfis consolidados por combinações demográficas e c
 
 ---
 
-   
+   **Nós (Labels):** Platform, AgeGroup, Country, GenZProfile.
+
+
+**Relacionamentos:**
+
+(:Platform)-[:HAS_AUDIENCE]->(:AgeGroup) (Métricas globais de gênero)
+
+
+
+(:GenZProfile)-[:USES]->(:Platform) (Uso primário e tempo de sessão) 
+
+
+
+(:GenZProfile)-[:LIVES_IN]->(:Country) (Localização geográfica) 
+
+
+
+(:GenZProfile)-[:BELONGS_TO]->(:AgeGroup) (Conexão micro-macro) 
 
 
 
 
 
 
+---
 
 
 ## 13. Próximos passos
