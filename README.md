@@ -202,16 +202,16 @@ LIMIT 25;
 
 
 ## Resumo da Análise dos Datasets
-​**global_social_media_users_by_age_gender_2025_clean.csv:**
+​**data/samples/global_social_media_users_by_age_gender_2025_clean.csv:**
 
 Contém 85 registros cobrindo 25 plataformas globais (como Facebook, Instagram, TikTok e YouTube). Mapeia métricas de MAU (Monthly Active Users) em bilhões, distribuição percentual por gênero e faixas etárias.  
 
-**​genz_social_media_usage_sample_1000.csv:**
+**data/samples/genz_social_media_usage_sample_1000.csv:**
 
 Base amostral individual com 1.000 observações de jovens de 13 a 27 anos em 7 países. Captura horas de uso diário, score de saúde mental (1 a 10), tempo de tela pré-sono e nível de vício.  
 
 
-**​genz_profile_aggregation_sample_500.csv:**
+**data/samples/genz_profile_aggregation_sample_500.csv:**
 
 Versão agregada com 500 perfis consolidados por combinações demográficas e comportamentais. Otimizada para o modelo de grafos no Neo4j AuraDB Free por agrupar amostras mantendo médias ponderadas.  
 
