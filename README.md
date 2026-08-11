@@ -223,8 +223,10 @@ Base amostral individual com 1.000 observações de jovens de 13 a 27 anos em 7 
 
 Versão agregada com 500 perfis consolidados por combinações demográficas e comportamentais. Otimizada para o modelo de grafos no Neo4j AuraDB Free por agrupar amostras mantendo médias ponderadas.  
 
+---
 
-## Modelagem de Grafo
+
+## Modelagem do Grafo
 
 ```
 
