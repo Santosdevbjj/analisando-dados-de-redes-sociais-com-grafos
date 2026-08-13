@@ -1,13 +1,11 @@
 /*
 Load the aggregated Gen-Z profiles.
 This file is designed for AuraDB Free, keeping the graph under the 200k node / 400k relationship limits.
-
 */
 
-:param genz_url => 'https://raw.githubusercontent.com/Santosdevbjj/analisando-dados-de-redes-sociais-com-grafos/main/data/processed/genz_usage_profiles.csv';
+WITH 'https://raw.githubusercontent.com/Santosdevbjj/analisando-dados-de-redes-sociais-com-grafos/main/data/processed/genz_usage_profiles.csv' AS genz_url
 
-
-LOAD CSV WITH HEADERS FROM $genz_url AS row
+LOAD CSV WITH HEADERS FROM genz_url AS row
 MERGE (u:UsageProfile {profile_id: row.profile_id})
 SET u.age = toInteger(row.age),
     u.gender = row.gender,
