@@ -2,13 +2,11 @@
 Load the cleaned global demographic dataset.
 Recommended import source:
 - GitHub raw URL for data/processed/global_social_media_users_clean.csv
-- Or upload the CSV in Neo4j Data Importer
 */
 
-:param global_url => 'https://raw.githubusercontent.com/Santosdevbjj/analisando-dados-de-redes-sociais-com-grafos/main/data/processed/global_social_media_users_clean.csv';
+WITH 'https://raw.githubusercontent.com/Santosdevbjj/analisando-dados-de-redes-sociais-com-grafos/main/data/processed/global_social_media_users_clean.csv' AS global_url
 
-
-LOAD CSV WITH HEADERS FROM $global_url AS row
+LOAD CSV WITH HEADERS FROM global_url AS row
 MERGE (p:Platform {name: row.Platform})
 SET p.mau_billion = toFloat(row.mau_billion),
     p.overall_female_pct = toFloat(row.overall_female_pct),
