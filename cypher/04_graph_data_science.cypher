@@ -10,15 +10,14 @@ CALL gds.version();
 // 2. Limpar projeções existentes (se houver)
 CALL gds.graph.drop('genz-usage-projection', false);
 
-// 3. Criar a Projeção de Grafo em Memória (Bipartida: GenZProfile + Platform)
+// 3. Criar a Projeção de Grafo em Memória (Bipartida: UsageProfile + Platform)
 CALL gds.graph.project(
   'genz-usage-projection',
-  ['GenZProfile', 'Platform'],
+  ['UsageProfile', 'Platform'],
   {
-    USES: {
-      type: 'USES',
-      orientation: 'UNDIRECTED',
-      properties: ['avg_session_minutes', 'daily_usage_hours']
+    USES_PRIMARY: {
+      type: 'USES_PRIMARY',
+      orientation: 'UNDIRECTED'
     }
   }
 );
@@ -36,13 +35,13 @@ LIMIT 15;
 CALL gds.louvain.stream('genz-usage-projection')
 YIELD nodeId, communityId
 WITH gds.util.asNode(nodeId) AS node, communityId
-WHERE node:GenZProfile
+WHERE node:UsageProfile
 RETURN communityId AS ClusterID,
        count(node) AS TotalMembros,
-       avg(node.daily_usage_hours) AS MediaUsoDiario,
-       avg(node.mental_health_score) AS MediaSaudeMental
+       avg(node.avg_daily_usage_hours) AS MediaUsoDiario,
+       avg(node.avg_mental_health_score) AS MediaSaudeMental
 ORDER BY TotalMembros DESC
 LIMIT 10;
 
 // 6. Limpeza da projeção em memória pós-execução
-CALL gds.graph.drop('genz-usage-projection');
+CALL gds.graph.drop('genz-usage-projection', false);
