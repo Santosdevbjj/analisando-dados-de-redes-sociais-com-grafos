@@ -24,4 +24,4 @@ Cole os logs de erro ou insira capturas de tela do Neo4j Browser/Workspace.
 **Ambiente Operacional:**
  - OS: [ex: Ubuntu 22.04, Windows 11]
  - Instância Neo4j: [ex: AuraDB Free, Local Docker]
- - Versão do Python: [ex: 3.11.2]
+ - Versão do Python: [ex: 3.14.7]
