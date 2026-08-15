@@ -114,7 +114,9 @@ Na amostra local do dataset Gen-Z, os padrões mais consistentes observados fora
 
 ## 9. Impacto / Business Performance
 
-O modelo em grafo reduz um cruzamento que hoje é manual (planilha por plataforma, faixa etária e país) para consultas Cypher reutilizáveis, permitindo que áreas de marketing e product analytics priorizem campanhas por país/idade/plataforma sem depender de um analista para recompilar a análise a cada pergunta. Por rodar inteiramente em AuraDB Free, o custo de infraestrutura para essa camada de decisão é zero — o trade-off documentado (seção 7) é a amostragem, não a qualidade da resposta de negócio.
+O modelo em grafo reduz um cruzamento que hoje é manual (planilha por plataforma, faixa etária e país) para consultas Cypher reutilizáveis, permitindo que áreas de marketing e product analytics priorizem campanhas por país/idade/plataforma sem depender de um analista para recompilar a análise a cada pergunta. 
+
+Por rodar inteiramente em AuraDB Free, a infraestrutura do banco utiliza o tier gratuito do Neo4j AuraDB para fins educacionais e de demonstração, sem custo direto de licenciamento no escopo atual — o trade-off documentado (seção 7) é a amostragem, não a qualidade da resposta de negócio.
 
 ## 10. Próximos Passos
 
@@ -130,54 +132,5 @@ O modelo em grafo reduz um cruzamento que hoje é manual (planilha por plataform
 
 [![Portfólio](https://img.shields.io/badge/Portfólio-Sérgio_Santos-111827?style=for-the-badge&logo=githubpages&logoColor=00eaff)](https://portfoliosantossergio.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sérgio_Santos-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santossergioluiz)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
