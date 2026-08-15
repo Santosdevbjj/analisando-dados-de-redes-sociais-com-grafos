@@ -28,7 +28,7 @@ Evidências
 Obrigatórios:
 
 -   Git;
--   Python 3.11+;
+-   Python 3.14.7;
 -   conta Neo4j;
 -   Neo4j AuraDB Free;
 -   Neo4j Browser/Workspace.
