@@ -116,6 +116,12 @@ Consultas de negócio implementadas e validáveis no AuraDB Free:
 
 Na amostra local do dataset Gen-Z, os padrões mais consistentes observados foram: uso médio diário próximo de 3,5 horas; TikTok, Instagram e YouTube como plataformas líderes; alta concentração de uso noturno; e queda no score de saúde mental à medida que o nível de vício sobe. Estes números refletem a amostra utilizada no projeto, não o dataset completo de 1 milhão de linhas.
 
+
+
+<img width="1083" height="625" alt="1000130807" src="https://github.com/user-attachments/assets/ada20b34-85d2-4925-98d6-af8e1e50a7db" />
+
+
+
 ## 9. Impacto / Business Performance
 
 O modelo em grafo reduz um cruzamento que hoje é manual (planilha por plataforma, faixa etária e país) para consultas Cypher reutilizáveis, permitindo que áreas de marketing e product analytics priorizem campanhas por país/idade/plataforma sem depender de um analista para recompilar a análise a cada pergunta. 
