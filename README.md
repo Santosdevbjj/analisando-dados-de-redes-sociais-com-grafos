@@ -9,6 +9,10 @@
 
 Modelagem em grafo (Neo4j) para cruzar alcance global de plataformas de redes sociais com padrões de comportamento digital da Geração Z, respeitando os limites operacionais do AuraDB Free.
 
+
+<img width="1083" height="625" alt="1000130893" src="https://github.com/user-attachments/assets/4538b5ae-caae-4d20-a833-87adb5c4026e" />
+
+
 ---
 
 ## 1. Problema
